@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "next/link";
 
 const Navbar = () => (
-  <nav className="w-full flex items-center justify-between shadow-lg h-18 text-gray-700 ">
+  <nav className="w-full flex items-center justify-between border-b-2 border-gray-200 h-18 text-gray-700 bg-white">
     <div className="flex items-center">
         <div className="bg-blue-50 w-10 h-10 ml-10 flex items-center justify-center mr-2 rounded-xl">
             <p className="text-xl text-blue-400">CC</p>
