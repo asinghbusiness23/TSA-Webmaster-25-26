@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -22,6 +21,17 @@
 
 body {
   color: var(--foreground);
-  font-family: 'Inter', Helvetica, sans-serif;
+  font-family: "Inter", Helvetica, sans-serif;
   height: 100%;
+  overflow-x: none;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* @media (min-width: 700px) {
+  .hello{
+    flex-direction: row;
+  }
+} */

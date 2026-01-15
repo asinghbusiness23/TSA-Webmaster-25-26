@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Lato, Montserrat, Rubik } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -14,6 +14,20 @@ const geistMono = Geist_Mono({
 
 const inter = Inter({
   subsets: ["latin"],
+  weight: ["300", "400", "700"],
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+});
+
+const rubik = Rubik({
+  subsets: ["latin"],
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
 });
 
 export const metadata = {
@@ -24,7 +38,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${inter.className} antialiased bg-gray-100/100 h-full`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className={`${rubik.className} antialiased bg-gray-200/100 h-full`}>
         {children}
       </body>
     </html>
